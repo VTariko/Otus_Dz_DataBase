@@ -16,13 +16,13 @@ public class User
     
     [Column("second_name")]
     public string SecondName { get; set; } = null!;
-    
+
     [Column("middle_name")]
-    public string MiddleName { get; set; } = null!;
+    public string? MiddleName { get; set; }
     
     [Column("passport_series")]
     public string PassportSeries { get; set; } = null!;
-    
+
     [Column("passport_number")]
-    public long PassportNumber { get; set; }
+    public string PassportNumber { get; set; } = null!;
 }

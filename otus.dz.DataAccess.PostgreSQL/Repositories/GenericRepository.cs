@@ -12,6 +12,11 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
         _dbSet = context.Set<TEntity>();
     }
 
+    public Task<List<TEntity>> GetAllAsync(CancellationToken cancellationToken = default)
+    {
+        return Task.FromResult(_dbSet.ToList());
+    }
+
     public async Task<TEntity> FindById<TId>(TId id)
     {
         return await _dbSet.FindAsync(id);

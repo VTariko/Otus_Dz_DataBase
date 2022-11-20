@@ -21,5 +21,5 @@ public class Card
     public string ValidityPeriodYear { get; set; } = null!;
     
     [ForeignKey("account_id")]
-    public BankAccount BankAccount { get; set; }
+    public BankAccount BankAccount { get; set; } = null!;
 }

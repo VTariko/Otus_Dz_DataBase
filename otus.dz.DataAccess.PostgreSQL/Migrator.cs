@@ -3,7 +3,7 @@ using Npgsql;
 
 namespace otus.dz.DataAccess.PostgreSQL;
 
-public class Migrator
+public static class Migrator
 {
     public static void MigrateDatabase()
     {

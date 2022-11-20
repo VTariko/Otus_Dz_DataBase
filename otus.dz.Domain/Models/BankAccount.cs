@@ -16,7 +16,7 @@ public class BankAccount
     
     [Column("currency")]
     public string Currency { get; set; } = null!;
-    
+
     [ForeignKey("user_id")]
-    public User User { get; set; }
+    public User User { get; set; } = null!;
 }

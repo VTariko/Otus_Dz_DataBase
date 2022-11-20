@@ -2,6 +2,7 @@
 
 public interface IGenericRepository<TEntity>
 {
+    Task<List<TEntity>> GetAllAsync(CancellationToken cancellationToken = default);
     public Task<TEntity> FindById<TId>(TId id);
     public void Add(TEntity entity);
     public Task Remove<TId>(TId id);
