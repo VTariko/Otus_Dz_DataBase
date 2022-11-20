@@ -1,0 +1,19 @@
+﻿{
+  "profiles": {
+    "Kestrel": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:7210/api/swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "HTTP_PORT": "7210",
+        "DATABASE_HOST": "localhost",
+        "DATABASE_PORT": "5432",        
+        "DATABASE_NAME": "sberbank",
+        "DATABASE_LOGIN": "postgres",
+        "DATABASE_PASSWORD": "password",
+        "MIGRATION_SCRIPTS_PATH": "./Migrations"
+      }
+    }
+  }
+}

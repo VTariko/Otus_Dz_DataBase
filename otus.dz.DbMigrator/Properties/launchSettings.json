@@ -1,0 +1,16 @@
+﻿{
+  "profiles": {
+    "DbMigrator": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ENVIRONMENT": "debug",
+        "DATABASE_HOST": "localhost",
+        "DATABASE_PORT": "5432",
+        "DATABASE_NAME": "sberbank",
+        "DATABASE_LOGIN": "postgres",
+        "DATABASE_PASSWORD": "password",
+        "MIGRATION_SCRIPTS_PATH": "Migrations"
+      }
+    }
+  }
+}
